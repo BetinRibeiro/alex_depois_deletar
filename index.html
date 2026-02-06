@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Consignado - Crédito Consignado Rápido e Seguro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    </style>
+</head>
+<body class="font-sans antialiased bg-olive-950 text-white overflow-x-hidden">
+
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-olive-950 via-blue-900 to-olive-900">
+        <!-- Abstract Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-1/2 -right-1/2 w-[800px] h-[800px] bg-lime-400/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute -bottom-1/2 -left-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 py-20 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime-400/10 border border-lime-400/20 text-lime-400 mb-6 animate-fade-in-up">
+                <i data-feather="trending-up" class="w-4 h-4"></i>
+                <span class="text-sm font-medium">Taxas a partir de 1,30% ao mês</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-lime-200 to-lime-400 bg-clip-text text-transparent animate-fade-in-up delay-100">
+                Crédito Consignado<br>
+                <span class="text-lime-400">Sem Complicação</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up delay-200">
+                Soluções financeiras personalizadas para aposentados, pensionistas e servidores públicos. Rápido, seguro e sem burocracia.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
+                <a href="https://api.whatsapp.com/send?phone=5588996617322&text=Olá%20Alex!%20Gostaria%20de%20simular%20um%20crédito%20consignado." 
+                   target="_blank"
+                   class="group relative px-8 py-4 bg-lime-400 text-olive-950 font-bold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(206,247,59,0.4)] flex items-center gap-3">
+                    <span class="relative z-10">Simular Agora</span>
+                    <i data-feather="arrow-right" class="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform"></i>
+                    <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                </a>
+                
+                <button onclick="scrollToSection('calculadora')" class="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 flex items-center gap-3">
+                    <i data-feather="calculator" class="w-5 h-5"></i>
+                    <span>Calcular Parcelas</span>
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-4xl mx-auto">
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-lime-400/50 transition-colors">
+                    <div class="text-3xl font-bold text-lime-400 mb-2">15min</div>
+                    <div class="text-gray-400">Aprovação rápida</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-lime-400/50 transition-colors">
+                    <div class="text-3xl font-bold text-lime-400 mb-2">R$ 50M+</div>
+                    <div class="text-gray-400">Em crédito liberado</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-lime-400/50 transition-colors">
+                    <div class="text-3xl font-bold text-lime-400 mb-2">98%</div>
+                    <div class="text-gray-400">Clientes satisfeitos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Dashboard -->
+    <section id="servicos" class="py-20 bg-olive-950 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Por que escolher o <span class="text-lime-400">Alex Consignado</span>?</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">As melhores condições do mercado com atendimento personalizado e humanizado.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="group relative bg-gradient-to-br from-blue-900/50 to-blue-800/30 rounded-3xl p-8 border border-blue-700/30 hover:border-lime-400/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-lime-400/0 to-lime-400/0 group-hover:from-lime-400/10 group-hover:to-transparent transition-all duration-500"></div>
+                    <div class="w-14 h-14 bg-lime-400/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="zap" class="w-7 h-7 text-lime-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Aprovação Express</h3>
+                    <p class="text-gray-400 leading-relaxed">Análise de crédito em até 15 minutos com documentação simplificada.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative bg-gradient-to-br from-blue-900/50 to-blue-800/30 rounded-3xl p-8 border border-blue-700/30 hover:border-lime-400/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-lime-400/0 to-lime-400/0 group-hover:from-lime-400/10 group-hover:to-transparent transition-all duration-500"></div>
+                    <div class="w-14 h-14 bg-lime-400/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="shield" class="w-7 h-7 text-lime-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">100% Seguro</h3>
+                    <p class="text-gray-400 leading-relaxed">Seus dados protegidos com criptografia de ponta e sigilo absoluto.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative bg-gradient-to-br from-blue-900/50 to-blue-800/30 rounded-3xl p-8 border border-blue-700/30 hover:border-lime-400/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-lime-400/0 to-lime-400/0 group-hover:from-lime-400/10 group-hover:to-transparent transition-all duration-500"></div>
+                    <div class="w-14 h-14 bg-lime-400/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="percent" class="w-7 h-7 text-lime-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Menores Taxas</h3>
+                    <p class="text-gray-400 leading-relaxed">Parcerias com os principais bancos garantindo as melhores taxas do mercado.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group relative bg-gradient-to-br from-blue-900/50 to-blue-800/30 rounded-3xl p-8 border border-blue-700/30 hover:border-lime-400/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-lime-400/0 to-lime-400/0 group-hover:from-lime-400/10 group-hover:to-transparent transition-all duration-500"></div>
+                    <div class="w-14 h-14 bg-lime-400/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="heart" class="w-7 h-7 text-lime-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Atendimento VIP</h3>
+                    <p class="text-gray-400 leading-relaxed">Consultor exclusivo Alex acompanhando seu processo do início ao fim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculadora" class="py-20 bg-gradient-to-b from-olive-950 to-blue-950">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Simule seu <span class="text-lime-400">Crédito Consignado</span></h2>
+                    <p class="text-gray-400">Calcule suas parcelas e veja quanto pode comprometer da sua renda.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Valor Desejado</label>
+                        <div class="relative">
+                            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">R$</span>
+                            <input type="number" id="valor" placeholder="20.000" class="w-full bg-olive-900/50 border border-olive-700 rounded-xl px-4 py-4 pl-12 text-white placeholder-gray-500 focus:outline-none focus:border-lime-400 focus:ring-1 focus:ring-lime-400 transition-all">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Prazo (meses)</label>
+                        <select id="prazo" class="w-full bg-olive-900/50 border border-olive-700 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-lime-400 focus:ring-1 focus:ring-lime-400 transition-all appearance-none cursor-pointer">
+                            <option value="12">12 meses</option>
+                            <option value="24">24 meses</option>
+                            <option value="36">36 meses</option>
+                            <option value="48">48 meses</option>
+                            <option value="72">72 meses</option>
+                            <option value="84">84 meses</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-900/50 to-blue-800/50 rounded-2xl p-6 border border-blue-700/30 mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Parcela Estimada</p>
+                            <p class="text-4xl font-bold text-lime-400" id="resultado-parcela">R$ 0,00</p>
+                        </div>
+                        <div class="h-12 w-px bg-white/10 hidden md:block"></div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Taxa de Juros</p>
+                            <p class="text-2xl font-semibold text-white">1,30% a.m.</p>
+                        </div>
+                        <div class="h-12 w-px bg-white/10 hidden md:block"></div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Total com Juros</p>
+                            <p class="text-2xl font-semibold text-white" id="resultado-total">R$ 0,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://api.whatsapp.com/send?phone=5588996617322&text=Olá%20Alex!%20Fiz%20uma%20simulação%20no%20site%20e%20gostaria%20de%20mais%20informações." 
+                   target="_blank"
+                   class="w-full py-4 bg-lime-400 text-olive-950 font-bold rounded-xl hover:bg-lime-300 transition-colors flex items-center justify-center gap-2 text-lg">
+                    <i data-feather="message-circle" class="w-5 h-5"></i>
+                    Falar com Alex no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Can Apply -->
+    <section class="py-20 bg-olive-950">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 text-white">Quem pode <span class="text-lime-400">solicitar</span>?</h2>
+                    <p class="text-gray-400 text-lg mb-8">O crédito consignado está disponível para diversas categorias de beneficiários com margem consignável disponível.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:border-lime-400/30 transition-colors">
+                            <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-feather="user-check" class="w-6 h-6 text-lime-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Aposentados INSS</h4>
+                                <p class="text-gray-400 text-sm">Beneficiários do Instituto Nacional do Seguro Social com margem disponível.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:border-lime-400/30 transition-colors">
+                            <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-feather="users" class="w-6 h-6 text-lime-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Pensionistas</h4>
+                                <p class="text-gray-400 text-sm">Beneficiários de pensão por morte com comprovação de renda.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:border-lime-400/30 transition-colors">
+                            <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-feather="briefcase" class="w-6 h-6 text-lime-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Servidores Públicos</h4>
+                                <p class="text-gray-400 text-sm">Federais, estaduais e municipais ativos ou inativos.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:border-lime-400/30 transition-colors">
+                            <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-feather="hard-hat" class="w-6 h-6 text-lime-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Forças Armadas</h4>
+                                <p class="text-gray-400 text-sm">Militares das Forças Armadas e Auxiliares com margem consignável.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-lime-400/20 to-blue-600/20 rounded-3xl blur-2xl"></div>
+                    <img src="http://static.photos/finance/640x360/123" alt="Consultoria Financeira" class="relative rounded-3xl shadow-2xl border border-white/10 w-full object-cover h-[600px]">
+                    
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-xl max-w-xs">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 bg-lime-400 rounded-full flex items-center justify-center">
+                                <i data-feather="check" class="w-5 h-5 text-olive-950"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">Aprovado!</p>
+                                <p class="text-xs text-gray-400">há 2 minutos</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300">João da Silva acabou de liberar R$ 15.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gradient-to-b from-blue-950 to-olive-950">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-white">O que dizem os <span class="text-lime-400">clientes</span></h2>
+                <p class="text-gray-400">Depoimentos reais de quem já realizou o sonho com o Alex.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-lime-400/30 transition-all duration-300">
+                    <div class="flex gap-1 mb-4">
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Atendimento excelente! O Alex me ajudou a quitar dívidas caras e organizei minha vida financeira. Processo super rápido."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center text-white font-bold">MS</div>
+                        <div>
+                            <p class="font-semibold text-white">Maria Santos</p>
+                            <p class="text-sm text-gray-400">Aposentada INSS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-lime-400/30 transition-all duration-300">
+                    <div class="flex gap-1 mb-4">
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Servidor público há 20 anos e nunca vi taxas tão boas. Recomendo demais o trabalho do Alex, muito profissional."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center text-white font-bold">JC</div>
+                        <div>
+                            <p class="font-semibold text-white">José Carlos</p>
+                            <p class="text-sm text-gray-400">Servidor Federal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-lime-400/30 transition-all duration-300">
+                    <div class="flex gap-1 mb-4">
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                        <i data-feather="star" class="w-5 h-5 text-lime-400 fill-lime-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Precisei reformar minha casa e o crédito consignado foi a melhor solução. Alex explicou tudo direitinho, sem pressa."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center text-white font-bold">AP</div>
+                        <div>
+                            <p class="font-semibold text-white">Ana Paula</p>
+                            <p class="text-sm text-gray-400">Pensionista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-800"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23CEF73B\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Pronto para realizar seus <span class="text-lime-400">projetos</span>?</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Não perca tempo com burocracias. Fale agora mesmo com o Alex pelo WhatsApp e tenha uma resposta em minutos.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://api.whatsapp.com/send?phone=5588996617322&text=Olá%20Alex!%20Gostaria%20de%20solicitar%20um%20crédito%20consignado." 
+                   target="_blank"
+                   class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-lime-400 text-olive-950 font-bold rounded-full hover:bg-lime-300 transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(206,247,59,0.3)]">
+                    <i data-feather="smartphone" class="w-5 h-5"></i>
+                    <span>Chamar no WhatsApp</span>
+                </a>
+                
+                <a href="tel:+5588996617322" class="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300">
+                    <i data-feather="phone" class="w-5 h-5"></i>
+                    <span>(88) 99661-7322</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
